@@ -1,0 +1,23 @@
+img {
+	display: block;
+	height: 100%;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img-container {
+	overflow: hidden;
+	height: 300px;
+	width: 300px;
+}
+
+#clothing-item-list {	
+	list-style-type: none;
+}
