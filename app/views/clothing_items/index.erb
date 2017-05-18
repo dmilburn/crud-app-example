@@ -1,18 +1,23 @@
-<h2 class="center-text">Go Shopping</h2>
-<div class="center" id="new-clothing-item-form-container">
-<form class="center" id="new-clothing-item-form" action="/clothing_items" method="post">
-	<input type="text" name="clothing_item[color]" placeholder="green">
-	<input type="text" name="clothing_item[kind]" placeholder="purse">
-	<input type="text" name="clothing_item[url]" placeholder="www.example.com/test.jpg">
-	<input type="submit" value="Purchase">
-</form>
+<div id="shopping-container" class="space-at-bottom">
+	<h2 class="center-text">Go Shopping</h2>
+	<div class="center" id="new-clothing-item-form-container">
+	<form id="new-clothing-item-form" action="/clothing_items" method="post">
+		<input type="text" name="clothing_item[color]" placeholder="green">
+		<input type="text" name="clothing_item[kind]" placeholder="purse">
+		<input type="text" name="clothing_item[url]" placeholder="www.example.com/test.jpg">
+		<input type="submit" value="Purchase">
+	</form>
+	</div>
 </div>
 
-<ul id="clothing-item-list" class="center-text">
-	<% @clothing_items.each do |clothing_item| %>
-	<li class="clothing-item">
-		<h3 class="clothing-item-description"><%= clothing_item.color %> <%= clothing_item.kind %></h3>
-		<div class="img-container center"><img class="center" src="<%= clothing_item.url %>"></div>
-	</li>
-	<% end %>
-</ul>
+<div id="closet-container">
+	<h2 class="center-text">My Closet</h2>
+	<ul id="clothing-item-list">
+		<% @clothing_items.each do |clothing_item| %>
+		<li class="clothing-item space-at-bottom">
+			<h3 class="center-text clothing-item-description"><%= clothing_item.color %> <%= clothing_item.kind %></h3>
+			<div class="img-container center"><img class="center" src="<%= clothing_item.url %>"></div>
+		</li>
+		<% end %>
+	</ul>
+</div>

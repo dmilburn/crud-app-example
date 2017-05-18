@@ -25,13 +25,13 @@ img {
 
 #clothing-item-list {	
 	list-style-type: none;
+	padding: 0;
 }
-
-.clothing-item {
-	padding-bottom: 40px;
-}
-
 
 #new-clothing-item-form-container {
 	width: 75%;
+}
+
+.space-at-bottom {
+	padding-bottom: 40px
 }
