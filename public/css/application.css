@@ -3,6 +3,11 @@ img {
 	height: 100%;
 }
 
+.container {
+	border: 2px solid black;
+	margin: 50px;
+}
+
 .center-text {
 	text-align: center;
 }
