@@ -30,3 +30,8 @@ img {
 .clothing-item {
 	padding-bottom: 40px;
 }
+
+
+#new-clothing-item-form-container {
+	width: 75%;
+}
