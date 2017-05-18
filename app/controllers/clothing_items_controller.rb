@@ -20,5 +20,9 @@ end
 
 get '/clothing_items/:id' do
   @clothing_item = ClothingItem.find(params[:id])
-  erb :'/clothing_items/show'
+  if request.xhr?
+    erb :'/clothing_items/show', layout: false
+  else
+    erb :'/clothing_items/show'
+  end
 end
