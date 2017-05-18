@@ -1,6 +1,13 @@
 <div id="shopping-container" class="space-at-bottom">
 	<h2 class="center-text">Go Shopping</h2>
-	<div class="center" id="new-clothing-item-form-container">
+	<div class="center center-text" id="new-clothing-item-form-container">
+		<% if @errors %>
+			<ul class="red-text errors center-text">
+				<% @errors.each do |error| %>
+					<li><%= error%></li>
+				<% end %>
+			</ul>
+ 		<% end %>
 		<form id="new-clothing-item-form" action="/clothing_items" method="post">
 			<input type="text" name="clothing_item[color]" placeholder="green">
 			<input type="text" name="clothing_item[kind]" placeholder="purse">

@@ -13,6 +13,7 @@ post '/clothing_items' do
     end
   else
     @errors = clothing_item.errors.full_messages
+    @clothing_items = ClothingItem.all
     erb :'/clothing_items/index'
   end
 end

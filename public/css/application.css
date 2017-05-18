@@ -33,5 +33,15 @@ img {
 }
 
 .space-at-bottom {
-	padding-bottom: 40px
+	padding-bottom: 40px;
+}
+
+.red-text {
+	color: red;
+}
+
+.errors {
+	list-style-type: none;
+	padding: 0;
+
 }
