@@ -17,3 +17,8 @@ post '/clothing_items' do
     erb :'/clothing_items/index'
   end
 end
+
+get '/clothing_items/:id' do
+  @clothing_item = ClothingItem.find(params[:id])
+  erb :'/clothing_items/show'
+end
