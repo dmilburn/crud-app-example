@@ -1,6 +1,6 @@
 <ul id="clothing-item-list" class="center-text">
 	<% @clothing_items.each do |clothing_item| %>
-	<li>
+	<li class="clothing-item">
 		<h3 class="clothing-item-description"><%= clothing_item.color %> <%= clothing_item.kind %></h3>
 		<div class="img-container center"><img class="center" src="<%= clothing_item.url %>"></div>
 	</li>

@@ -26,3 +26,7 @@ img {
 #clothing-item-list {	
 	list-style-type: none;
 }
+
+.clothing-item {
+	padding-bottom: 40px;
+}
